@@ -12,12 +12,10 @@ const ContactPage = () => {
         {/* Section Content*/}
         <div className="flex flex-col gap-4 items-center w-[90%] md:w-1/2 mx-auto text-center text-gray-700 space-y-4">
           <h3 className="text-lg md:text-xl tracking-wider font-semibold ">
-            Would you like to delete account?
+            Do you want to delete your account?
           </h3>
           <p className="text-base md:text-lg px-8">
-            I am always open to discussing web development topics. If you have
-            any questions or want to say hi, please feel free to mail me. If you
-            want, you should use the form below.
+            If you want to delete your account, please fill out the form below; We will delete the account after verifying that it belongs to you within 24 hours of receiving the request.
           </p>
 
           {/*Mail Form */}

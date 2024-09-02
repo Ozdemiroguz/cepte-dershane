@@ -66,7 +66,7 @@ const Form = () => {
         required
       />
       {/*Subject */}
-      <input
+      {/* <input
         type="text"
         name="subject"
         placeholder="Subject"
@@ -75,10 +75,10 @@ const Form = () => {
         className="my_input"
         maxLength={100}
         required
-      />
+      /> */}
       {/*Message */}
       <textarea
-        placeholder="Message"
+        placeholder="Delete account reason"
         name="body"
         value={formData.body}
         onChange={onChange}
@@ -90,12 +90,11 @@ const Form = () => {
         type="submit"
         className=" my_button bg-rose-500 hover:bg-gega-red text-white "
       >
-        CONTACT ME
+        DELETE ACCOUNT
       </button>
       <p
-        className={`bg-green-300 text-lg sm:text-xl p-1 font-bold tracking-wider w-1/2 self-center rounded-full ${
-          isVisible ? "visible" : "invisible"
-        }`}
+        className={`bg-green-300 text-lg sm:text-xl p-1 font-bold tracking-wider w-1/2 self-center rounded-full ${isVisible ? "visible" : "invisible"
+          }`}
       >
         Email sended!
       </p>

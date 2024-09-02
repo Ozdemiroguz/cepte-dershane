@@ -1,7 +1,7 @@
 "use server";
 import nodemailer from "nodemailer";
 
-export async function sendMail({ name, email, subject, body }) {
+export async function sendMail({ name, email, body }) {
   const { SMTP_EMAIL, SMTP_PASSWORD } = process.env;
 
   // create transport
@@ -28,7 +28,7 @@ export async function sendMail({ name, email, subject, body }) {
     await transport.sendMail({
       from: SMTP_EMAIL,
       to: SMTP_EMAIL,
-      subject,
+      "subject": `New delete from ${name}`,
       html: `From ${email}
              <h2>From ${name}</h2>
              ${body}`,
